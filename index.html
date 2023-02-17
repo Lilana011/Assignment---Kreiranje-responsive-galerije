@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment • Kreiranje responsive galerije</title>
+	
+<style type="text/css">
+
+.content {
+  max-width: 850px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  
+  font-familiy: Verdana, Geneva, sans-serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;  
+}
+
+p{
+  text-align: justify;
+}
+
+/* First the Grid */
+.gallery-grid {
+  
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+grid-template-rows:    repeat(2, auto);
+ }
+
+.gallery-frame {
+  
+  text-align: center;
+  background-color:  #6699FF;
+  color: #d9d9d9;
+}
+
+
+.gallery-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  
+}
+
+.gallery-img:hover {
+  opacity: .25;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+.column {
+width: 33.33%;
+}
+}
+
+@media screen and (max-width: 768px) {
+.column {
+width: 50%;
+}
+}
+
+@media screen and (max-width: 414px) {
+.column {
+width: 100%;
+}
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="content">
+<h2>Gallery Heading</h2>
+  
+    <div class="gallery-grid">
+    <figure class="gallery-frame">
+      <img class="gallery-img" src="placeholder.png" alt="placeholder" title="placeholder">
+      <figcaption>Image Title 01</figcaption>
+    </figure>
+
+    <figure class="gallery-frame">
+      <img class="gallery-img" src="placeholder.png" alt="placeholder" title="placeholder">
+      <figcaption>Image Title 02</figcaption>
+    </figure>
+
+    <figure class="gallery-frame">
+      <img class="gallery-img" src="placeholder.png" alt="placeholder" title="placeholder">
+      <figcaption>Image Title 03</figcaption>
+    </figure>
+
+    <figure class="gallery-frame">
+      <img class="gallery-img" src="placeholder.png" alt="placeholder" title="placeholder">
+      <figcaption>Image Title 04</figcaption>
+    </figure>
+
+    <figure class="gallery-frame">
+      <img class="gallery-img" src="placeholder.png" alt="placeholder" title="placeholder">
+      <figcaption>Image Title 05</figcaption>
+    </figure>
+
+    <figure class="gallery-frame">
+      <img class="gallery-img" src="placeholder.png" alt="placeholder" title="placeholder">
+      <figcaption>Image Title 06</figcaption>
+    </figure>
+
+    <figure class="gallery-frame">
+      <img class="gallery-img" src="placeholder.png" alt="placeholder" title="placeholder">
+      <figcaption>Image Title 07</figcaption>
+    </figure>
+
+    <figure class="gallery-frame">
+     <img class="gallery-img" src="placeholder.png" alt="placeholder" title="placeholder">
+      <figcaption>Image Title 08</figcaption>
+    </figure>
+
+    <figure class="gallery-frame">
+      <img class="gallery-img" src="placeholder.png" alt="placeholder" title="placeholder">
+      <figcaption>Image Title 09</figcaption>
+    </figure>
+
+    <figure class="gallery-frame">
+     <img class="gallery-img" src="placeholder.png" alt="placeholder" title="placeholder">
+      <figcaption>Image Title 10</figcaption>
+    </figure>
+   
+  </div>
+  
+       
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis urna in nulla placerat tincidunt. Maecenas ac purus eros. Proin lorem dolor, vulputate sed porta sit amet, suscipit quis odio. Etiam metus arcu, lacinia ut sagittis sed, egestas eget diam. Vestibulum rhoncus lectus sapien, at luctus ipsum eleifend id. Fusce est odio, porttitor a arcu a, gravida bibendum nisl. Etiam a nisl sed est pulvinar pellentesque sed non justo. Vivamus condimentum, purus sit amet vulputate fermentum, magna lorem commodo augue, quis congue neque nulla sed nibh. Duis tincidunt nunc dolor, vitae congue augue ultrices sed. Morbi malesuada rhoncus diam, a efficitur nunc viverra mattis. </p>
+</div>
+</body>
+</html>
