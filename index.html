@@ -4,13 +4,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Assignment • Kreiranje responsive galerije</title>
-	
-<style type="text/css">
+	<style type="text/css">
+		
 
-body{
-	margin:0;
-	color:#ffffe6;
-	font-family:Audiowide;}
+h2{ 
+text-align: left; 
+font-family: Audiowide;}
+
+
+
+
 
 .container {
 max-width: 960px;
@@ -18,49 +21,102 @@ width: 90%;
 margin: 0 auto;
 }
 
+
 .row {
 display: flex;
 flex-flow: row wrap;
 justify-content: flex-start;
 }
+
 .column {
 flex-basis: 20%;
 box-sizing: border-box;
-padding: 8px;
+padding: 15px;
+}
 
-}
+
 .box {
-height: 150px;
-background-color: #6779FF;
+height: 100px;
+background-color: LightBlue;
+text-align: center; 
 }
+
+
+
 @media screen and (max-width: 1024px) {
 .column {
-width: 33.33%;
+flex-basis: 33.33%;
 }
 }
-
 @media screen and (max-width: 768px) {
 .column {
-width: 50%;
+flex-basis: 50%;
 }
 }
-
 @media screen and (max-width: 414px) {
 .column {
-width: 100%;
+flex-basis: 100%;
 }
 }
 
-</style>
+img{
+	margin: auto;
+	width: 100%;
+	border-color: LightGray;
+	max-height: 100%;
+	}
+.saturate { filter: saturate(1) invert(1%) sepia(1%) hue-rotate(1deg) brightness(1000%) contrast(80%); }
+	</style>
+
 </head>
 <body>
-	<div class="container">
-	<h2>Gallery Heading</h2>
-	<div class="column">
-<div class="box"><img src="placeholder.png"class="grayscale">Image title</div>
-</div>
-	
-	</div>
+<div class="container">
+<h2>Gallery Heading</h2>
+<div class="row">
 
+<div class="column">
+<div class="box"><img src="https://i.ibb.co/5rHQNBN/placeholder-image.png" alt="placeholder-image "class="saturate"border="1">Image title</div>
+</div>
+
+<div class="column">
+<div class="box"><img src="https://i.ibb.co/5rHQNBN/placeholder-image.png" alt="placeholder-image" class="saturate" border="1">Image title</div>
+</div>
+
+<div class="column">
+<div class="box"><img src="https://i.ibb.co/5rHQNBN/placeholder-image.png" alt="placeholder-image"class="saturate" border="1">Image title</div>
+</div>
+
+<div class="column">
+<div class="box"><img src="https://i.ibb.co/5rHQNBN/placeholder-image.png" alt="placeholder-image"class="saturate"  border="1">Image title</div>
+</div>
+
+<div class="column">
+<div class="box"><img src="https://i.ibb.co/5rHQNBN/placeholder-image.png" alt="placeholder-image" class="saturate"  border="1">Image title</div>
+</div>
+
+<div class="column">
+<div class="box"><img src="https://i.ibb.co/5rHQNBN/placeholder-image.png" alt="placeholder-image" class="saturate"  border="1">Image title</div>
+</div>
+
+<div class="column">
+<div class="box"><img src="https://i.ibb.co/5rHQNBN/placeholder-image.png" alt="placeholder-image" class="saturate"  border="1">Image title</div>
+</div>
+
+<div class="column">
+<div class="box"><img src="https://i.ibb.co/5rHQNBN/placeholder-image.png" alt="placeholder-image" class="saturate" border="1">Image title</div>
+</div>
+
+<div class="column">
+<div class="box"><img src="https://i.ibb.co/5rHQNBN/placeholder-image.png" alt="placeholder-image" class="saturate" border="1">Image title</div>
+</div>
+
+<div class="column">
+<div class="box"><img src="https://i.ibb.co/5rHQNBN/placeholder-image.png" alt="placeholder-image" class="saturate" border="1">Image title</div>
+</div>
+
+</div>
+<br>
+<p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+</div>
 </body>
 </html>
